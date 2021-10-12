@@ -34,7 +34,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [https://0x41-li.github.io/ping-coming-soon-page/](https://0x41-li.github.io/ping-coming-soon-page/)
 
 ## My process
 
