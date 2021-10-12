@@ -1,0 +1,136 @@
+:root {
+  --ff: "Libre Franklin", Helvetica, Arial, sans-serif;
+  --primary-color: hsl(223, 87%, 63%);
+  --secondary-color: hsl(223, 100%, 88%);
+  --secondary-2-color: hsl(354, 100%, 66%);
+  --gray: hsl(0, 0%, 59%);
+  --very-dark-blue: hsl(209, 33%, 12%);
+}
+
+body {
+  font-family: var(--ff);
+  font-size: 14px;
+}
+
+main {
+  max-width: 500px;
+  margin: auto;
+}
+
+h1 {
+  color: var(--gray);
+  font-size: 1.4rem;
+}
+
+form input,
+form button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3rem;
+  padding: 0rem 2rem !important;
+}
+
+form input {
+  border: 2px solid var(--secondary-color) !important;
+}
+
+form input::placeholder {
+  color: var(--secondary-color) !important;
+}
+
+.form-error input {
+  border-color: var(--secondary-2-color) !important;
+}
+
+form button {
+  font-size: 0.9rem !important;
+}
+
+.fw-600 {
+  font-weight: 600 !important;
+}
+
+.btn-primary {
+  background-color: var(--primary-color) !important;
+  border: none !important;
+}
+
+.btn-primary:hover {
+  background-color: hsl(223, 86%, 72%) !important;
+}
+
+.text-dark-blue {
+  color: var(--very-dark-blue) !important;
+}
+
+.social-media li {
+  height: 2rem;
+  width: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color .5s;
+}
+
+.social-media li i {
+  color: var(--primary-color) !important;
+  transition: color .5s;
+}
+
+.social-media li:hover {
+  background-color: var(--primary-color) !important;
+}
+
+.social-media li:hover i {
+  color: white !important;
+}
+
+.copyright {
+  color: var(--gray) !important;
+  font-size: 0.7rem !important;
+}
+
+.form-para-error {
+  display: none;
+  color: var(--secondary-2-color);
+}
+
+.form-error .form-para-error {
+  display: block;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+
+@media screen and (min-width: 1024px) {
+  h1 {
+    font-size: 2.4rem;
+  }
+  main {
+    max-width: 700px;
+  }
+
+  .form-para-error {
+    text-align: left !important;
+    padding-left: 2.2rem;
+  }
+
+  #form {
+    flex-direction: row !important;
+    gap: 1rem !important;
+  }
+
+  form button {
+    flex: 0 0 200px;
+  }
+
+}
